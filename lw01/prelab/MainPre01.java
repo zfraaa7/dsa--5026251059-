@@ -9,6 +9,7 @@ public class MainPre01 {
  
         try (Scanner inputz = new Scanner(new File("jobs.txt"))) {
             while (inputz.hasNext()) {
+                
                 String jenisz = inputz.next();
                 String idz = inputz.next();
                 int pagez = inputz.nextInt();

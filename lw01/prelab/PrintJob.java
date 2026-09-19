@@ -24,9 +24,10 @@ public abstract class PrintJob implements Chargeable{
 
     public int calculateCharge(int copies){
         if(copies < 1){
+            
             throw new IllegalArgumentException("Copies must be at least 1");
         }
-        
+
         return copies*calculateCharge();
     }
 
