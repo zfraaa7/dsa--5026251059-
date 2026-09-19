@@ -3,6 +3,10 @@ public abstract class PrintJob implements Chargeable{
     private int pages;
 
     public PrintJob(String id, int pages){
+        if(pages < 1){
+            throw new IllegalArgumentException("Pages must be at least 1");
+        }
+
         this.id = id;
         this.pages = pages;
     }
@@ -19,6 +23,10 @@ public abstract class PrintJob implements Chargeable{
     public abstract int calculateCharge();
 
     public int calculateCharge(int copies){
+        if(copies < 1){
+            throw new IllegalArgumentException("Copies must be at least 1");
+        }
+        
         return copies*calculateCharge();
     }
 
