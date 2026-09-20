@@ -7,7 +7,7 @@ public class MainPre01 {
     public static void main(String[] args) throws FileNotFoundException {
          List<PrintJob> jobsz = new ArrayList<>();
  
-        try (Scanner inputz = new Scanner(new File("jobs.txt"))) {
+        Scanner inputz = new Scanner(new File("jobs.txt"));
             while (inputz.hasNext()) {
                 
                 String jenisz = inputz.next();
@@ -22,12 +22,13 @@ public class MainPre01 {
                     throw new IllegalArgumentException("Unknown job type: " + jenisz);
                 }
             }
-        }catch(FileNotFoundException e) {
-            System.out.println("jobs.txt not found in the working directory");
-        }
- 
-        for (int i = 0; i < jobsz.size(); i++) {
+            
+            for (int i = 0; i < jobsz.size(); i++) {
             System.out.println(jobsz.get(i).summary());
         }
+
     }
+         
+        
 }
+
