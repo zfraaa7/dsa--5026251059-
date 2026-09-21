@@ -6,7 +6,7 @@ public class ProjectorRental extends Rental {
     }
 
     @Override 
-    public class int calculateCharge(){
+    public int calculateCharge(){
         int hariz = getDays();
         if(hariz <= 3){
             return hariz*60000;
