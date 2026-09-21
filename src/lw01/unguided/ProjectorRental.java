@@ -15,7 +15,7 @@ public class ProjectorRental extends Rental {
         }
     }
 
-    public class String label(){
+    public String label(){
         return "Projector";
     }
 }
