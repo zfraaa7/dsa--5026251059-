@@ -21,13 +21,13 @@ public abstract class Rental implements Chargeable{
         return days;
     }
 
-    abstract int calculateCharge();
+    public abstract int calculateCharge();
 
     public int calculateCharge(int units){
         if(units < 1){
             throw new IllegalArgumentException("Pages must be at least 1");
         }
-        
+
         return units * calculateCharge();
     }
 
