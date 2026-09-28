@@ -61,6 +61,7 @@ public class Main {
                     if(Integer.parseInt(stokBuku.get(i)[1]) >= 1){
                         kondisi1 = true;
                     }
+                    break;
                 }
 
             
@@ -72,6 +73,7 @@ public class Main {
                     if(max > batas){
                         kondisi2 = true;
                     }
+                    break;
                 }
 
             
