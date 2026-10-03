@@ -13,7 +13,7 @@ public class Main {
         Stack<String[]> gagal = new Stack<String[]>();
 
         String[] kalkulus = {"Kalkulus", "2"};
-        String[] Fisika = {"Fisika", "2"};
+        String[] Fisika = {"Fisika", "1"};
         String[] Statistika = {"Statistika", "2"};
 
         stokBuku.add(kalkulus);
@@ -83,7 +83,8 @@ public class Main {
                 jumlahPinjam += 1;
                 anggota[1] = String.valueOf(jumlahPinjam);
                 int sisaStok;
-
+                sukses.add(dataSekarang);
+                
                 for(int i = 0; i < stokBuku.size(); i++){
                 if(buku.equals(stokBuku.get(i)[0])){
                    sisaStok = Integer.parseInt(stokBuku.get(i)[1]) - 1;
@@ -91,7 +92,7 @@ public class Main {
                    stokBuku.get(i)[1] = String.valueOf(sisaStok);
                 }
 
-                sukses.add(dataSekarang);
+                
             }
             }else{
                 gagal.push(dataSekarang);
