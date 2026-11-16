@@ -188,7 +188,6 @@ public class Main {
             int u = inputz.nextInt();
             int v = inputz.nextInt();
             int w = inputz.nextInt();
-            graph[u][v] = w;
             addEdge(u, v, w);
         }
 
