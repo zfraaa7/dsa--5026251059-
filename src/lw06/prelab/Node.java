@@ -1,3 +1,4 @@
+package lw06.prelab;
 public class Node {
     int data;
     Node left;

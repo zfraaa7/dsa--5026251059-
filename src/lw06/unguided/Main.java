@@ -7,8 +7,8 @@ public class Main {
         // Write your main code here
         BinarySearchTree bstz = new BinarySearchTree();
 
-        String[] baris = read.nextLine().split(" ");
-            for (String number : baris) {
+        String[] barisz = read.nextLine().split(" ");
+            for (String number : barisz) {
                 int data = Integer.parseInt(number);
                 bstz.insert(data);
             }
